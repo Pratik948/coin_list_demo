@@ -12,10 +12,13 @@
 		E66724D02D11D35900AFD8B6 /* PresenterInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = E66724CB2D11D35900AFD8B6 /* PresenterInterface.swift */; };
 		E66724D12D11D35900AFD8B6 /* UIStoryboardExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E66724CC2D11D35900AFD8B6 /* UIStoryboardExtension.swift */; };
 		E66724D22D11D35900AFD8B6 /* ViewInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = E66724CD2D11D35900AFD8B6 /* ViewInterface.swift */; };
+		E66724EF2D11D48000AFD8B6 /* CoinListInterfaces.swift in Sources */ = {isa = PBXBuildFile; fileRef = E66724EA2D11D48000AFD8B6 /* CoinListInterfaces.swift */; };
+		E66724F02D11D48000AFD8B6 /* CoinListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E66724EB2D11D48000AFD8B6 /* CoinListPresenter.swift */; };
+		E66724F12D11D48000AFD8B6 /* CoinListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E66724EC2D11D48000AFD8B6 /* CoinListViewController.swift */; };
+		E66724F22D11D48000AFD8B6 /* CoinListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E66724ED2D11D48000AFD8B6 /* CoinListInteractor.swift */; };
+		E66724F32D11D48000AFD8B6 /* CoinListWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = E66724EE2D11D48000AFD8B6 /* CoinListWireframe.swift */; };
 		E6CD5AD92D11C43A00F5FDB0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6CD5AD82D11C43A00F5FDB0 /* AppDelegate.swift */; };
 		E6CD5ADB2D11C43A00F5FDB0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6CD5ADA2D11C43A00F5FDB0 /* SceneDelegate.swift */; };
-		E6CD5ADD2D11C43A00F5FDB0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6CD5ADC2D11C43A00F5FDB0 /* ViewController.swift */; };
-		E6CD5AE02D11C43A00F5FDB0 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = E6CD5ADF2D11C43A00F5FDB0 /* Base */; };
 		E6CD5AE22D11C43C00F5FDB0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E6CD5AE12D11C43C00F5FDB0 /* Assets.xcassets */; };
 		E6CD5AE52D11C43C00F5FDB0 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = E6CD5AE42D11C43C00F5FDB0 /* Base */; };
 /* End PBXBuildFile section */
@@ -26,11 +29,14 @@
 		E66724CB2D11D35900AFD8B6 /* PresenterInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresenterInterface.swift; sourceTree = "<group>"; };
 		E66724CC2D11D35900AFD8B6 /* UIStoryboardExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIStoryboardExtension.swift; sourceTree = "<group>"; };
 		E66724CD2D11D35900AFD8B6 /* ViewInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewInterface.swift; sourceTree = "<group>"; };
+		E66724EA2D11D48000AFD8B6 /* CoinListInterfaces.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinListInterfaces.swift; sourceTree = "<group>"; };
+		E66724EB2D11D48000AFD8B6 /* CoinListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinListPresenter.swift; sourceTree = "<group>"; };
+		E66724EC2D11D48000AFD8B6 /* CoinListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinListViewController.swift; sourceTree = "<group>"; };
+		E66724ED2D11D48000AFD8B6 /* CoinListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinListInteractor.swift; sourceTree = "<group>"; };
+		E66724EE2D11D48000AFD8B6 /* CoinListWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinListWireframe.swift; sourceTree = "<group>"; };
 		E6CD5AD52D11C43A00F5FDB0 /* pratikcoinlistdemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pratikcoinlistdemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6CD5AD82D11C43A00F5FDB0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E6CD5ADA2D11C43A00F5FDB0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		E6CD5ADC2D11C43A00F5FDB0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		E6CD5ADF2D11C43A00F5FDB0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E6CD5AE12D11C43C00F5FDB0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E6CD5AE42D11C43C00F5FDB0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E6CD5AE62D11C43C00F5FDB0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -59,6 +65,18 @@
 			path = VIPER;
 			sourceTree = "<group>";
 		};
+		E66724E92D11D45B00AFD8B6 /* Wireframes */ = {
+			isa = PBXGroup;
+			children = (
+				E66724EA2D11D48000AFD8B6 /* CoinListInterfaces.swift */,
+				E66724EB2D11D48000AFD8B6 /* CoinListPresenter.swift */,
+				E66724EC2D11D48000AFD8B6 /* CoinListViewController.swift */,
+				E66724ED2D11D48000AFD8B6 /* CoinListInteractor.swift */,
+				E66724EE2D11D48000AFD8B6 /* CoinListWireframe.swift */,
+			);
+			path = Wireframes;
+			sourceTree = "<group>";
+		};
 		E6CD5ACC2D11C43A00F5FDB0 = {
 			isa = PBXGroup;
 			children = (
@@ -78,11 +96,10 @@
 		E6CD5AD72D11C43A00F5FDB0 /* pratikcoinlistdemo */ = {
 			isa = PBXGroup;
 			children = (
+				E66724E92D11D45B00AFD8B6 /* Wireframes */,
 				E66724C82D11D34000AFD8B6 /* VIPER */,
 				E6CD5AD82D11C43A00F5FDB0 /* AppDelegate.swift */,
 				E6CD5ADA2D11C43A00F5FDB0 /* SceneDelegate.swift */,
-				E6CD5ADC2D11C43A00F5FDB0 /* ViewController.swift */,
-				E6CD5ADE2D11C43A00F5FDB0 /* Main.storyboard */,
 				E6CD5AE12D11C43C00F5FDB0 /* Assets.xcassets */,
 				E6CD5AE32D11C43C00F5FDB0 /* LaunchScreen.storyboard */,
 				E6CD5AE62D11C43C00F5FDB0 /* Info.plist */,
@@ -150,7 +167,6 @@
 			files = (
 				E6CD5AE22D11C43C00F5FDB0 /* Assets.xcassets in Resources */,
 				E6CD5AE52D11C43C00F5FDB0 /* Base in Resources */,
-				E6CD5AE02D11C43A00F5FDB0 /* Base in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -163,9 +179,13 @@
 			files = (
 				E66724CE2D11D35900AFD8B6 /* InteractorInterface.swift in Sources */,
 				E66724CF2D11D35900AFD8B6 /* BaseWireframe.swift in Sources */,
+				E66724EF2D11D48000AFD8B6 /* CoinListInterfaces.swift in Sources */,
+				E66724F02D11D48000AFD8B6 /* CoinListPresenter.swift in Sources */,
+				E66724F12D11D48000AFD8B6 /* CoinListViewController.swift in Sources */,
+				E66724F22D11D48000AFD8B6 /* CoinListInteractor.swift in Sources */,
+				E66724F32D11D48000AFD8B6 /* CoinListWireframe.swift in Sources */,
 				E66724D22D11D35900AFD8B6 /* ViewInterface.swift in Sources */,
 				E66724D02D11D35900AFD8B6 /* PresenterInterface.swift in Sources */,
-				E6CD5ADD2D11C43A00F5FDB0 /* ViewController.swift in Sources */,
 				E6CD5AD92D11C43A00F5FDB0 /* AppDelegate.swift in Sources */,
 				E6CD5ADB2D11C43A00F5FDB0 /* SceneDelegate.swift in Sources */,
 				E66724D12D11D35900AFD8B6 /* UIStoryboardExtension.swift in Sources */,
@@ -175,14 +195,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		E6CD5ADE2D11C43A00F5FDB0 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E6CD5ADF2D11C43A00F5FDB0 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		E6CD5AE32D11C43C00F5FDB0 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -324,9 +336,9 @@
 				INFOPLIST_FILE = pratikcoinlistdemo/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -351,9 +363,9 @@
 				INFOPLIST_FILE = pratikcoinlistdemo/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
