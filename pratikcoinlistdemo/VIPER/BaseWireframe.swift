@@ -33,8 +33,8 @@ extension Wireframe: WireframeInterface {
 
 public extension UIViewController {
 
-    func presentWireframe(_ wireframe: Wireframe, animated: Bool = true, completion: (() -> Void)? = nil) {
-        present(wireframe.viewController, animated: animated, completion: completion)
+    func presentWireframe(_ wireframe: Wireframe, animated: Bool = true, wrapInNavigationController: Bool = false, completion: (() -> Void)? = nil) {
+        present(wrapInNavigationController ? UINavigationController(rootViewController: wireframe.viewController) : wireframe.viewController, animated: animated, completion: completion)
     }
 
 }

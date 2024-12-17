@@ -24,6 +24,12 @@
 		E66725042D11F26700AFD8B6 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E66725032D11F26700AFD8B6 /* CoreDataManager.swift */; };
 		E667250A2D11F37B00AFD8B6 /* CoinDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E66725082D11F37B00AFD8B6 /* CoinDataModel.xcdatamodeld */; };
 		E667250C2D11F92300AFD8B6 /* AppStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E667250B2D11F92300AFD8B6 /* AppStorage.swift */; };
+		E667251C2D12108D00AFD8B6 /* CoinListFiltersInterfaces.swift in Sources */ = {isa = PBXBuildFile; fileRef = E66725172D12108D00AFD8B6 /* CoinListFiltersInterfaces.swift */; };
+		E667251D2D12108D00AFD8B6 /* CoinListFiltersPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E66725182D12108D00AFD8B6 /* CoinListFiltersPresenter.swift */; };
+		E667251E2D12108D00AFD8B6 /* CoinListFiltersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E66725192D12108D00AFD8B6 /* CoinListFiltersViewController.swift */; };
+		E667251F2D12108D00AFD8B6 /* CoinListFiltersInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E667251A2D12108D00AFD8B6 /* CoinListFiltersInteractor.swift */; };
+		E66725202D12108D00AFD8B6 /* CoinListFiltersWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = E667251B2D12108D00AFD8B6 /* CoinListFiltersWireframe.swift */; };
+		E66725222D12116600AFD8B6 /* CoinFilterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E66725212D12116600AFD8B6 /* CoinFilterModel.swift */; };
 		E6CD5AD92D11C43A00F5FDB0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6CD5AD82D11C43A00F5FDB0 /* AppDelegate.swift */; };
 		E6CD5ADB2D11C43A00F5FDB0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6CD5ADA2D11C43A00F5FDB0 /* SceneDelegate.swift */; };
 		E6CD5AE22D11C43C00F5FDB0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E6CD5AE12D11C43C00F5FDB0 /* Assets.xcassets */; };
@@ -48,6 +54,12 @@
 		E66725032D11F26700AFD8B6 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 		E66725092D11F37B00AFD8B6 /* CoinDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoinDataModel.xcdatamodel; sourceTree = "<group>"; };
 		E667250B2D11F92300AFD8B6 /* AppStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStorage.swift; sourceTree = "<group>"; };
+		E66725172D12108D00AFD8B6 /* CoinListFiltersInterfaces.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinListFiltersInterfaces.swift; sourceTree = "<group>"; };
+		E66725182D12108D00AFD8B6 /* CoinListFiltersPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinListFiltersPresenter.swift; sourceTree = "<group>"; };
+		E66725192D12108D00AFD8B6 /* CoinListFiltersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinListFiltersViewController.swift; sourceTree = "<group>"; };
+		E667251A2D12108D00AFD8B6 /* CoinListFiltersInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinListFiltersInteractor.swift; sourceTree = "<group>"; };
+		E667251B2D12108D00AFD8B6 /* CoinListFiltersWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinListFiltersWireframe.swift; sourceTree = "<group>"; };
+		E66725212D12116600AFD8B6 /* CoinFilterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinFilterModel.swift; sourceTree = "<group>"; };
 		E6CD5AD52D11C43A00F5FDB0 /* pratikcoinlistdemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pratikcoinlistdemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6CD5AD82D11C43A00F5FDB0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E6CD5ADA2D11C43A00F5FDB0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -82,6 +94,7 @@
 		E66724E92D11D45B00AFD8B6 /* Wireframes */ = {
 			isa = PBXGroup;
 			children = (
+				E66725232D1217A200AFD8B6 /* CoinListFilters */,
 				E66724F92D11E99400AFD8B6 /* CoinList */,
 			);
 			path = Wireframes;
@@ -106,6 +119,7 @@
 			isa = PBXGroup;
 			children = (
 				E66724F72D11E29900AFD8B6 /* CoinModel.swift */,
+				E66725212D12116600AFD8B6 /* CoinFilterModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -147,6 +161,18 @@
 				E66725032D11F26700AFD8B6 /* CoreDataManager.swift */,
 			);
 			path = CoreData;
+			sourceTree = "<group>";
+		};
+		E66725232D1217A200AFD8B6 /* CoinListFilters */ = {
+			isa = PBXGroup;
+			children = (
+				E66725172D12108D00AFD8B6 /* CoinListFiltersInterfaces.swift */,
+				E66725182D12108D00AFD8B6 /* CoinListFiltersPresenter.swift */,
+				E66725192D12108D00AFD8B6 /* CoinListFiltersViewController.swift */,
+				E667251A2D12108D00AFD8B6 /* CoinListFiltersInteractor.swift */,
+				E667251B2D12108D00AFD8B6 /* CoinListFiltersWireframe.swift */,
+			);
+			path = CoinListFilters;
 			sourceTree = "<group>";
 		};
 		E6CD5ACC2D11C43A00F5FDB0 = {
@@ -265,9 +291,15 @@
 				E66724F32D11D48000AFD8B6 /* CoinListWireframe.swift in Sources */,
 				E66724FF2D11F21B00AFD8B6 /* StorageProtocol.swift in Sources */,
 				E66725012D11F23400AFD8B6 /* CoreDataStorage.swift in Sources */,
+				E66725222D12116600AFD8B6 /* CoinFilterModel.swift in Sources */,
 				E66724D22D11D35900AFD8B6 /* ViewInterface.swift in Sources */,
 				E66724D02D11D35900AFD8B6 /* PresenterInterface.swift in Sources */,
 				E6CD5AD92D11C43A00F5FDB0 /* AppDelegate.swift in Sources */,
+				E667251C2D12108D00AFD8B6 /* CoinListFiltersInterfaces.swift in Sources */,
+				E667251D2D12108D00AFD8B6 /* CoinListFiltersPresenter.swift in Sources */,
+				E667251E2D12108D00AFD8B6 /* CoinListFiltersViewController.swift in Sources */,
+				E667251F2D12108D00AFD8B6 /* CoinListFiltersInteractor.swift in Sources */,
+				E66725202D12108D00AFD8B6 /* CoinListFiltersWireframe.swift in Sources */,
 				E66724FC2D11EA5A00AFD8B6 /* NetworkManager.swift in Sources */,
 				E667250A2D11F37B00AFD8B6 /* CoinDataModel.xcdatamodeld in Sources */,
 				E66724F82D11E29900AFD8B6 /* CoinModel.swift in Sources */,

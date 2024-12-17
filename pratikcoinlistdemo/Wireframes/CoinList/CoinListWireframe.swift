@@ -28,4 +28,7 @@ final class CoinListWireframe: Wireframe {
 // MARK: - Extensions -
 
 extension CoinListWireframe: CoinListWireframeInterface {
+    func openFilterWireframe(delegate: CoinFilterDelegate, filter: CoinFilterModel? = nil) {
+        viewController.presentWireframe(CoinListFiltersWireframe(delegate: delegate, filter: filter), wrapInNavigationController: true)
+    }
 }

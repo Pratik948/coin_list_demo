@@ -54,6 +54,7 @@ final class CoinListViewController: UIViewController {
         setupDataSource()
         applySnapshot()
         setupSearchBar()
+        setupFilterButton()
         presenter.viewDidLoad()
     }
 }
@@ -78,6 +79,14 @@ extension CoinListViewController: CoinListViewInterface {
         spinner.stopAnimating()
     }
     
+    func updateUI() {
+        setupFilterButton()
+    }
+}
+
+extension CoinListViewController {
+    
+    // MARK: - Setup
     func setupSpinner() {
         view.addSubview(spinner)
         spinner.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
@@ -88,10 +97,12 @@ extension CoinListViewController: CoinListViewInterface {
         view.backgroundColor = UIColor.white
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
         view.addSubview(tableView)
-        tableView.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
-        tableView.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
-        tableView.topAnchor.constraint(equalTo: view.topAnchor).isActive = true
-        tableView.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
+        NSLayoutConstraint.activate([
+            tableView.topAnchor.constraint(equalTo: view.topAnchor),
+            tableView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+            tableView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
+            tableView.bottomAnchor.constraint(equalTo: view.bottomAnchor)
+        ])
     }
     
     func setupDataSource() {
@@ -108,9 +119,60 @@ extension CoinListViewController: CoinListViewInterface {
         snapshot.appendItems(coins, toSection: .main)
         dataSource.apply(snapshot, animatingDifferences: true)
     }
-
+    
     func setupSearchBar() {
         navigationItem.searchController = searchBarController
+    }
+    
+    func setupFilterButton() {
+        let filterBarButton = UIBarButtonItem(image: UIImage.init(systemName: "line.horizontal.3.decrease.circle\((presenter.currentFilter != nil ? ".fill" : ""))"), style: UIBarButtonItem.Style.plain, target: self, action: #selector(filterAction))
+        var barButtons: [UIBarButtonItem] = [filterBarButton]
+        if let titleButton = filterTitle() {
+            titleButton.addTarget(self, action: #selector(filterAction), for: .touchUpInside)
+            barButtons.append(contentsOf: [
+                UIBarButtonItem(systemItem: UIBarButtonItem.SystemItem.flexibleSpace),
+                UIBarButtonItem(customView: titleButton),
+                UIBarButtonItem(systemItem: UIBarButtonItem.SystemItem.flexibleSpace)
+            ])
+        }
+        setToolbarItems(barButtons, animated: true)
+        navigationController?.setToolbarHidden(false, animated: false)
+    }
+    
+    func filterTitle() -> UIButton? {
+        if (presenter.currentFilter != nil) {
+            let button = UIButton(type: .custom)
+            let heading = UILabel()
+            heading.text = "Filtered by:"
+            heading.textColor = UIColor.label
+            heading.font = UIFont.systemFont(ofSize: 12)
+            let title = UILabel()
+            title.textColor = UIColor.link
+            let filter = presenter.currentFilter!
+            let includedText = [filter.isActive ? "Active" : nil, filter.isInActive ? "Inactive" : nil, filter.isNew ? "New" : nil].compactMap { $0 }.joined(separator: ", ")
+            let onlyText = [filter.isCoin ? "Coin" : nil, filter.isToken ? "Token" : nil].compactMap { $0 }.joined(separator: ", ")
+            title.text = "" + (!includedText.isEmpty ? "\(includedText)" : "") + (!onlyText.isEmpty ? "\(!includedText.isEmpty ? ", " : "")Only: \(onlyText)" : "")
+            title.font = UIFont.systemFont(ofSize: 10)
+            let stackView = UIStackView(arrangedSubviews: [heading, title])
+            stackView.axis = .vertical
+            stackView.translatesAutoresizingMaskIntoConstraints = false
+            stackView.alignment = .center
+            stackView.isUserInteractionEnabled = false
+            button.addSubview(stackView)
+            NSLayoutConstraint.activate([
+                stackView.leadingAnchor.constraint(equalTo: button.leadingAnchor),
+                stackView.trailingAnchor.constraint(equalTo: button.trailingAnchor),
+                stackView.topAnchor.constraint(equalTo: button.topAnchor),
+                stackView.bottomAnchor.constraint(equalTo: button.bottomAnchor)
+            ])
+            return button
+        }
+        return nil
+    }
+    
+    @objc
+    private func filterAction() {
+        presenter.openFilter()
     }
 }
 
