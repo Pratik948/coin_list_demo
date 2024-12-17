@@ -10,6 +10,11 @@ import Foundation
 
 final class CoinListInteractor {
     weak var presenter: CoinListPresenterInterface?
+    private let storage: AppStorage<CoinModel>
+    
+    init(storage: AppStorage<CoinModel>) {
+        self.storage = storage
+    }
 }
 
 // MARK: - Extensions -
@@ -22,8 +27,14 @@ extension CoinListInteractor: CoinListInteractorInterface {
             switch result {
             case .success(let coins):
                 self.presenter?.didFetchCoinList(coins: coins)
+                self.storage.save(coins)
             case .failure(let error):
-                self.presenter?.didFailToFetchCoinList(error: error)
+                let cachedCoins = self.storage.load()
+                if cachedCoins.isEmpty {
+                    self.presenter?.didFailToFetchCoinList(error: error)
+                } else {
+                    self.presenter?.didFetchCoinList(coins: cachedCoins)
+                }
             }
         }
     }

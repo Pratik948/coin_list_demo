@@ -18,7 +18,7 @@ final class CoinListWireframe: Wireframe {
         let moduleViewController = CoinListViewController()
         super.init(viewController: moduleViewController)
 
-        let interactor = CoinListInteractor()
+        let interactor = CoinListInteractor(storage: AppStorage<CoinModel>())
         let presenter = CoinListPresenter(view: moduleViewController, interactor: interactor, wireframe: self)
         moduleViewController.presenter = presenter
     }

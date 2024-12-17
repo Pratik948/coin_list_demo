@@ -22,6 +22,6 @@ protocol CoinListPresenterInterface: PresenterInterface {
 }
 
 protocol CoinListInteractorInterface: InteractorInterface {
-    var presenter: CoinListPresenterInterface? { get set}
+    var presenter: CoinListPresenterInterface? { get set }
     func fetchCoinList()
 }
