@@ -19,6 +19,7 @@ protocol CoinListViewInterface: ViewInterface {
 protocol CoinListPresenterInterface: PresenterInterface {
     func didFetchCoinList(coins: [CoinModel])
     func didFailToFetchCoinList(error: Error)
+    func searchCoins(query: String)
 }
 
 protocol CoinListInteractorInterface: InteractorInterface {

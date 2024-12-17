@@ -32,6 +32,12 @@ final class CoinListViewController: UIViewController {
         return spinner
     }()
     
+    private lazy var searchBarController: UISearchController = {
+        let controller = UISearchController(searchResultsController: nil)
+        controller.searchBar.delegate = self
+        return controller
+    }()
+    
     var dataSource: UITableViewDiffableDataSource<CoinListSection, CoinModel>!
 
     var coins: [CoinModel] = []
@@ -42,10 +48,12 @@ final class CoinListViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "Coins"
+        navigationController?.navigationBar.prefersLargeTitles = true
         setupTableView()
         setupSpinner()
         setupDataSource()
         applySnapshot()
+        setupSearchBar()
         presenter.viewDidLoad()
     }
 }
@@ -85,6 +93,7 @@ extension CoinListViewController: CoinListViewInterface {
         tableView.topAnchor.constraint(equalTo: view.topAnchor).isActive = true
         tableView.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
     }
+    
     func setupDataSource() {
         dataSource = UITableViewDiffableDataSource<CoinListSection, CoinModel>(tableView: tableView) { tableView, indexPath, coin in
             let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
@@ -100,4 +109,17 @@ extension CoinListViewController: CoinListViewInterface {
         dataSource.apply(snapshot, animatingDifferences: true)
     }
 
+    func setupSearchBar() {
+        navigationItem.searchController = searchBarController
+    }
+}
+
+
+extension CoinListViewController: UISearchBarDelegate {
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        presenter.searchCoins(query: searchText)
+    }
+    func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
+        presenter.searchCoins(query: "")
+    }
 }
