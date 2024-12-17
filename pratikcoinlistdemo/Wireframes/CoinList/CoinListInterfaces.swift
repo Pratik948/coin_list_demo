@@ -12,11 +12,16 @@ protocol CoinListWireframeInterface: WireframeInterface {
 }
 
 protocol CoinListViewInterface: ViewInterface {
-    func setupView()
+    func showCoinList(_ coins: [CoinModel])
+    func showError(_ error: String)
 }
 
 protocol CoinListPresenterInterface: PresenterInterface {
+    func didFetchCoinList(coins: [CoinModel])
+    func didFailToFetchCoinList(error: Error)
 }
 
 protocol CoinListInteractorInterface: InteractorInterface {
+    var presenter: CoinListPresenterInterface? { get set}
+    func fetchCoinList()
 }

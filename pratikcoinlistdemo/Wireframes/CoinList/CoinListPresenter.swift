@@ -22,10 +22,29 @@ final class CoinListPresenter {
         self.view = view
         self.interactor = interactor
         self.wireframe = wireframe
+        self.interactor.presenter = self
     }
 }
 
 // MARK: - Extensions -
 
 extension CoinListPresenter: CoinListPresenterInterface {
+    func viewDidLoad() {
+        interactor.fetchCoinList()
+        view.showSpinner()
+    }
+    
+    func didFetchCoinList(coins: [CoinModel]) {
+        DispatchQueue.main.async {
+            self.view.showCoinList(coins)
+            self.view.hideSpinner()
+        }
+    }
+    
+    func didFailToFetchCoinList(error: Error) {
+        DispatchQueue.main.async {
+            self.view.showError(error.localizedDescription)
+            self.view.hideSpinner()
+        }
+    }
 }
