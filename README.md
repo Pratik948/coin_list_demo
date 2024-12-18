@@ -19,9 +19,11 @@ A demo application for listing and managing cryptocurrency coins. The app follow
 
 - List and display cryptocurrencies with details (name, symbol, type, etc.).
 - Filter coins by:
-  - Active/Inactive
-  - Coin/Token
+  - Active
+  - Inactive
   - New
+  - Coin
+  - Token
 - Search functionality for coins by name or symbol.
 - Persistent data storage using CoreData or JSON files.
 - VIPER architecture for clean code separation.
@@ -73,8 +75,8 @@ The project is built using the **VIPER** architecture, which ensures a clean sep
     - Search for coins by name or symbol using the search bar.
 
 **Persistent Storage**
-- All data is saved in the Documents directory using JSON files.
--	Data persists between app launches.
+- All data is saved in the CoreData by default and can be changed to the Documents directory using JSON files.
+- Data persists between app launches.
 
 ___
 
@@ -82,19 +84,16 @@ ___
 
 The project supports two types of data storage:
 1. File Storage: Simple and lightweight storage for saving and retrieving data in JSON files.
-2. Core Data: A more robust and scalable solution for managing structured data using Apple’s Core Data framework.
-
-1. File Storage
-
-The File Storage implementation uses JSON files for saving and retrieving data. It’s a great option for lightweight and simple use cases.
-	- Location: Files are stored in the app’s Documents directory.
-	- Format: Data is serialized and saved in JSON format using Swift’s Codable.
-
-2. Core Data
-
-For more complex scenarios requiring structured and scalable data management, the project uses Core Data.
-	- Persistence: Core Data stores data in a local SQLite database.
-	- Entity: The project defines a CoinEntity model to manage cryptocurrency data.
+	- The File Storage implementation uses JSON files for saving and retrieving data. It’s a great option for lightweight and simple use cases.
+		- Location: Files are stored in the app’s Documents directory.
+		- Format: Data is serialized and saved in JSON format using Swift’s Codable.
+3. Core Data: A more robust and scalable solution for managing structured data using Apple’s Core Data framework.
+   	- For more complex scenarios requiring structured and scalable data management, the project uses Core Data.
+		- Persistence: Core Data stores data in a local SQLite database.
+		- Entity: The project defines a CoinEntity model to manage cryptocurrency data.
+  
+If we want to change the data storage mechanism, we can modify the `kDataStorageType` constant to either `.file` or `.coredata` in the `AppStorage.swift` file.
+The default `DataStorageType` is `DataStorageType.coredata`.
 
 ___
 
@@ -102,13 +101,13 @@ ___
 
 The project includes unit tests for all VIPER components:
   - Interactor Tests:
-  -   Ensure business logic behaves as expected.
+  	- Ensure business logic behaves as expected.
   - Presenter Tests:
-    - Verify interactions between View and Interactor.
+  	- Verify interactions between View and Interactor.
   - View Tests:
-    - Simulate user interactions and UI updates.
+  	- Simulate user interactions and UI updates.
   - Wireframe Tests:
-    - Validate navigation logic.
+  	- Validate navigation logic.
 
 **Running Tests**
 
