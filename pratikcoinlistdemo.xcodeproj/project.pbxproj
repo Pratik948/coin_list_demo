@@ -36,6 +36,7 @@
 		E667253A2D12BD6400AFD8B6 /* CoinListWireframeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E66725392D12BD6400AFD8B6 /* CoinListWireframeTests.swift */; };
 		E667253C2D12BD9600AFD8B6 /* CoinListViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E667253B2D12BD9600AFD8B6 /* CoinListViewTests.swift */; };
 		E667253E2D12BE1000AFD8B6 /* CoinListInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E667253D2D12BE1000AFD8B6 /* CoinListInteractorTests.swift */; };
+		E66725402D12C50800AFD8B6 /* FileStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E667253F2D12C50800AFD8B6 /* FileStorage.swift */; };
 		E6CD5AD92D11C43A00F5FDB0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6CD5AD82D11C43A00F5FDB0 /* AppDelegate.swift */; };
 		E6CD5ADB2D11C43A00F5FDB0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6CD5ADA2D11C43A00F5FDB0 /* SceneDelegate.swift */; };
 		E6CD5AE22D11C43C00F5FDB0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E6CD5AE12D11C43C00F5FDB0 /* Assets.xcassets */; };
@@ -83,6 +84,7 @@
 		E66725392D12BD6400AFD8B6 /* CoinListWireframeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinListWireframeTests.swift; sourceTree = "<group>"; };
 		E667253B2D12BD9600AFD8B6 /* CoinListViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinListViewTests.swift; sourceTree = "<group>"; };
 		E667253D2D12BE1000AFD8B6 /* CoinListInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinListInteractorTests.swift; sourceTree = "<group>"; };
+		E667253F2D12C50800AFD8B6 /* FileStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileStorage.swift; sourceTree = "<group>"; };
 		E6CD5AD52D11C43A00F5FDB0 /* pratikcoinlistdemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pratikcoinlistdemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6CD5AD82D11C43A00F5FDB0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E6CD5ADA2D11C43A00F5FDB0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -182,6 +184,7 @@
 				E66724FE2D11F21B00AFD8B6 /* StorageProtocol.swift */,
 				E66725002D11F23400AFD8B6 /* CoreDataStorage.swift */,
 				E667250B2D11F92300AFD8B6 /* AppStorage.swift */,
+				E667253F2D12C50800AFD8B6 /* FileStorage.swift */,
 			);
 			path = LocalStorage;
 			sourceTree = "<group>";
@@ -377,6 +380,7 @@
 			files = (
 				E667250C2D11F92300AFD8B6 /* AppStorage.swift in Sources */,
 				E66724CE2D11D35900AFD8B6 /* InteractorInterface.swift in Sources */,
+				E66725402D12C50800AFD8B6 /* FileStorage.swift in Sources */,
 				E66725282D12B62000AFD8B6 /* CoinListTableViewCell.swift in Sources */,
 				E66724CF2D11D35900AFD8B6 /* BaseWireframe.swift in Sources */,
 				E66724EF2D11D48000AFD8B6 /* CoinListInterfaces.swift in Sources */,
