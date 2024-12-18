@@ -6,9 +6,6 @@ A demo application for listing and managing cryptocurrency coins. The app follow
 
 https://github.com/user-attachments/assets/af26f85f-d027-4436-976b-63456fe0c072
 
-https://github.com/user-attachments/assets/f7df259f-eee4-4b71-a0d2-869c8e8f9ead
-
-
 ---
 
 ## Table of Contents
