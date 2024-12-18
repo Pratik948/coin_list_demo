@@ -94,8 +94,8 @@ extension CoinListViewController {
     }
     
     func setupTableView() {
-        view.backgroundColor = UIColor.white
-        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
+        view.backgroundColor = UIColor.systemBackground
+        tableView.register(CoinListTableViewCell.self, forCellReuseIdentifier: "cell")
         view.addSubview(tableView)
         NSLayoutConstraint.activate([
             tableView.topAnchor.constraint(equalTo: view.topAnchor),
@@ -107,8 +107,8 @@ extension CoinListViewController {
     
     func setupDataSource() {
         dataSource = UITableViewDiffableDataSource<CoinListSection, CoinModel>(tableView: tableView) { tableView, indexPath, coin in
-            let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-            cell.textLabel?.text = "\(coin.name) (\(coin.symbol))"
+            let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! CoinListTableViewCell
+            cell.configure(coin: coin)
             return cell
         }
     }

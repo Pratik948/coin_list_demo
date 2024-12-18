@@ -30,6 +30,7 @@
 		E667251F2D12108D00AFD8B6 /* CoinListFiltersInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E667251A2D12108D00AFD8B6 /* CoinListFiltersInteractor.swift */; };
 		E66725202D12108D00AFD8B6 /* CoinListFiltersWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = E667251B2D12108D00AFD8B6 /* CoinListFiltersWireframe.swift */; };
 		E66725222D12116600AFD8B6 /* CoinFilterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E66725212D12116600AFD8B6 /* CoinFilterModel.swift */; };
+		E66725282D12B62000AFD8B6 /* CoinListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E66725272D12B62000AFD8B6 /* CoinListTableViewCell.swift */; };
 		E6CD5AD92D11C43A00F5FDB0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6CD5AD82D11C43A00F5FDB0 /* AppDelegate.swift */; };
 		E6CD5ADB2D11C43A00F5FDB0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6CD5ADA2D11C43A00F5FDB0 /* SceneDelegate.swift */; };
 		E6CD5AE22D11C43C00F5FDB0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E6CD5AE12D11C43C00F5FDB0 /* Assets.xcassets */; };
@@ -60,6 +61,7 @@
 		E667251A2D12108D00AFD8B6 /* CoinListFiltersInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinListFiltersInteractor.swift; sourceTree = "<group>"; };
 		E667251B2D12108D00AFD8B6 /* CoinListFiltersWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinListFiltersWireframe.swift; sourceTree = "<group>"; };
 		E66725212D12116600AFD8B6 /* CoinFilterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinFilterModel.swift; sourceTree = "<group>"; };
+		E66725272D12B62000AFD8B6 /* CoinListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinListTableViewCell.swift; sourceTree = "<group>"; };
 		E6CD5AD52D11C43A00F5FDB0 /* pratikcoinlistdemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pratikcoinlistdemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6CD5AD82D11C43A00F5FDB0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E6CD5ADA2D11C43A00F5FDB0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -103,16 +105,17 @@
 		E66724F42D11E13A00AFD8B6 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				E66724F52D11E14400AFD8B6 /* TableViewCell */,
+				E66724F52D11E14400AFD8B6 /* CoinListTableViewCell */,
 			);
 			path = View;
 			sourceTree = "<group>";
 		};
-		E66724F52D11E14400AFD8B6 /* TableViewCell */ = {
+		E66724F52D11E14400AFD8B6 /* CoinListTableViewCell */ = {
 			isa = PBXGroup;
 			children = (
+				E66725272D12B62000AFD8B6 /* CoinListTableViewCell.swift */,
 			);
-			path = TableViewCell;
+			path = CoinListTableViewCell;
 			sourceTree = "<group>";
 		};
 		E66724F62D11E28600AFD8B6 /* Model */ = {
@@ -282,6 +285,7 @@
 			files = (
 				E667250C2D11F92300AFD8B6 /* AppStorage.swift in Sources */,
 				E66724CE2D11D35900AFD8B6 /* InteractorInterface.swift in Sources */,
+				E66725282D12B62000AFD8B6 /* CoinListTableViewCell.swift in Sources */,
 				E66724CF2D11D35900AFD8B6 /* BaseWireframe.swift in Sources */,
 				E66724EF2D11D48000AFD8B6 /* CoinListInterfaces.swift in Sources */,
 				E66724F02D11D48000AFD8B6 /* CoinListPresenter.swift in Sources */,
