@@ -2,6 +2,11 @@
 
 A demo application for listing and managing cryptocurrency coins. The app follows the VIPER architecture and demonstrates data storage, filtering, and more.
 
+## Demo
+| iPhone  | iPad |
+| ------------- | ------------- |
+| ![Watch The Video](https://github.com/Pratik948/coin_list_demo/blob/main/Demo/Screen%20Recording%202024-12-18%20at%206.04.51%E2%80%AFPM%20Compressed.mov)  |  ![Watch The Video](https://github.com/Pratik948/coin_list_demo/blob/main/Demo/Screen%20Recording%202024-12-18%20at%206.07.13%E2%80%AFPM%20Compressed.mov) |
+
 ---
 
 ## Table of Contents
