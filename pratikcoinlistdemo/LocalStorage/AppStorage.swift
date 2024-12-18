@@ -7,8 +7,20 @@
 
 import Foundation
 
+enum DataStorageType {
+    case file
+    case coredata
+}
+
+let kDataStorageType: DataStorageType = .coredata
+
 func defaultStorage<T: Codable & Hashable>(_ t: T.Type) -> Storage<T> {
-    return CoreDataStorage<T>() // Change the default storage object whenever required
+    switch kDataStorageType {
+    case .file:
+        return FileStorage<T>(fileName: "CoinStore")
+    case .coredata:
+        return CoreDataStorage<T>()
+    }
 }
 
 final class AppStorage<T: Codable & Hashable>: StorageProtocol {
