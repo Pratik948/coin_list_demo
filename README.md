@@ -70,7 +70,7 @@ The project is built using the **VIPER** architecture, which ensures a clean sep
 1. Coin List
     - Displays a list of cryptocurrencies with their details (name, symbol, etc.).
 2. Filter Options
-    - Filter coins by their status (Active/Inactive), type (Coin/Token), or newness (New/Old).
+    - Filter coins by their status (Active/Inactive), type (Coin/Token), or newness (New).
 3. Search
     - Search for coins by name or symbol using the search bar.
 
