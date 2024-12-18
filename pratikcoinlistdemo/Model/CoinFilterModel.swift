@@ -7,7 +7,7 @@
 
 import Foundation
 
-class CoinFilterModel {
+class CoinFilterModel: Equatable {
     var isActive: Bool
     var isInActive: Bool
     var isNew: Bool
@@ -26,4 +26,13 @@ class CoinFilterModel {
         !isActive && !isInActive && !isNew && !isToken && !isCoin
     }
     
+    // Equatable conformance
+    static func == (lhs: CoinFilterModel, rhs: CoinFilterModel) -> Bool {
+        return lhs.isActive == rhs.isActive &&
+               lhs.isInActive == rhs.isInActive &&
+               lhs.isNew == rhs.isNew &&
+               lhs.isToken == rhs.isToken &&
+               lhs.isCoin == rhs.isCoin
+    }
+
 }

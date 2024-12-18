@@ -31,11 +31,26 @@
 		E66725202D12108D00AFD8B6 /* CoinListFiltersWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = E667251B2D12108D00AFD8B6 /* CoinListFiltersWireframe.swift */; };
 		E66725222D12116600AFD8B6 /* CoinFilterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E66725212D12116600AFD8B6 /* CoinFilterModel.swift */; };
 		E66725282D12B62000AFD8B6 /* CoinListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E66725272D12B62000AFD8B6 /* CoinListTableViewCell.swift */; };
+		E66725302D12BC3D00AFD8B6 /* pratikcoinlistdemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E667252F2D12BC3D00AFD8B6 /* pratikcoinlistdemoTests.swift */; };
+		E66725382D12BC7A00AFD8B6 /* CoinListPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E66725372D12BC7A00AFD8B6 /* CoinListPresenterTests.swift */; };
+		E667253A2D12BD6400AFD8B6 /* CoinListWireframeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E66725392D12BD6400AFD8B6 /* CoinListWireframeTests.swift */; };
+		E667253C2D12BD9600AFD8B6 /* CoinListViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E667253B2D12BD9600AFD8B6 /* CoinListViewTests.swift */; };
+		E667253E2D12BE1000AFD8B6 /* CoinListInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E667253D2D12BE1000AFD8B6 /* CoinListInteractorTests.swift */; };
 		E6CD5AD92D11C43A00F5FDB0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6CD5AD82D11C43A00F5FDB0 /* AppDelegate.swift */; };
 		E6CD5ADB2D11C43A00F5FDB0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6CD5ADA2D11C43A00F5FDB0 /* SceneDelegate.swift */; };
 		E6CD5AE22D11C43C00F5FDB0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E6CD5AE12D11C43C00F5FDB0 /* Assets.xcassets */; };
 		E6CD5AE52D11C43C00F5FDB0 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = E6CD5AE42D11C43C00F5FDB0 /* Base */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E66725312D12BC3D00AFD8B6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E6CD5ACD2D11C43A00F5FDB0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E6CD5AD42D11C43A00F5FDB0;
+			remoteInfo = pratikcoinlistdemo;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		E66724C92D11D35800AFD8B6 /* InteractorInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InteractorInterface.swift; sourceTree = "<group>"; };
@@ -62,6 +77,12 @@
 		E667251B2D12108D00AFD8B6 /* CoinListFiltersWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinListFiltersWireframe.swift; sourceTree = "<group>"; };
 		E66725212D12116600AFD8B6 /* CoinFilterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinFilterModel.swift; sourceTree = "<group>"; };
 		E66725272D12B62000AFD8B6 /* CoinListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinListTableViewCell.swift; sourceTree = "<group>"; };
+		E667252D2D12BC3D00AFD8B6 /* pratikcoinlistdemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = pratikcoinlistdemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E667252F2D12BC3D00AFD8B6 /* pratikcoinlistdemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pratikcoinlistdemoTests.swift; sourceTree = "<group>"; };
+		E66725372D12BC7A00AFD8B6 /* CoinListPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinListPresenterTests.swift; sourceTree = "<group>"; };
+		E66725392D12BD6400AFD8B6 /* CoinListWireframeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinListWireframeTests.swift; sourceTree = "<group>"; };
+		E667253B2D12BD9600AFD8B6 /* CoinListViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinListViewTests.swift; sourceTree = "<group>"; };
+		E667253D2D12BE1000AFD8B6 /* CoinListInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinListInteractorTests.swift; sourceTree = "<group>"; };
 		E6CD5AD52D11C43A00F5FDB0 /* pratikcoinlistdemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pratikcoinlistdemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6CD5AD82D11C43A00F5FDB0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E6CD5ADA2D11C43A00F5FDB0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -71,6 +92,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		E667252A2D12BC3D00AFD8B6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E6CD5AD22D11C43A00F5FDB0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -178,11 +206,32 @@
 			path = CoinListFilters;
 			sourceTree = "<group>";
 		};
+		E667252E2D12BC3D00AFD8B6 /* pratikcoinlistdemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				E66725362D12BC5F00AFD8B6 /* CoinList */,
+				E667252F2D12BC3D00AFD8B6 /* pratikcoinlistdemoTests.swift */,
+			);
+			path = pratikcoinlistdemoTests;
+			sourceTree = "<group>";
+		};
+		E66725362D12BC5F00AFD8B6 /* CoinList */ = {
+			isa = PBXGroup;
+			children = (
+				E66725372D12BC7A00AFD8B6 /* CoinListPresenterTests.swift */,
+				E66725392D12BD6400AFD8B6 /* CoinListWireframeTests.swift */,
+				E667253B2D12BD9600AFD8B6 /* CoinListViewTests.swift */,
+				E667253D2D12BE1000AFD8B6 /* CoinListInteractorTests.swift */,
+			);
+			path = CoinList;
+			sourceTree = "<group>";
+		};
 		E6CD5ACC2D11C43A00F5FDB0 = {
 			isa = PBXGroup;
 			children = (
 				E66725082D11F37B00AFD8B6 /* CoinDataModel.xcdatamodeld */,
 				E6CD5AD72D11C43A00F5FDB0 /* pratikcoinlistdemo */,
+				E667252E2D12BC3D00AFD8B6 /* pratikcoinlistdemoTests */,
 				E6CD5AD62D11C43A00F5FDB0 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -191,6 +240,7 @@
 			isa = PBXGroup;
 			children = (
 				E6CD5AD52D11C43A00F5FDB0 /* pratikcoinlistdemo.app */,
+				E667252D2D12BC3D00AFD8B6 /* pratikcoinlistdemoTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -216,6 +266,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		E667252C2D12BC3D00AFD8B6 /* pratikcoinlistdemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E66725332D12BC3D00AFD8B6 /* Build configuration list for PBXNativeTarget "pratikcoinlistdemoTests" */;
+			buildPhases = (
+				E66725292D12BC3D00AFD8B6 /* Sources */,
+				E667252A2D12BC3D00AFD8B6 /* Frameworks */,
+				E667252B2D12BC3D00AFD8B6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E66725322D12BC3D00AFD8B6 /* PBXTargetDependency */,
+			);
+			name = pratikcoinlistdemoTests;
+			productName = pratikcoinlistdemoTests;
+			productReference = E667252D2D12BC3D00AFD8B6 /* pratikcoinlistdemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		E6CD5AD42D11C43A00F5FDB0 /* pratikcoinlistdemo */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = E6CD5AE92D11C43C00F5FDB0 /* Build configuration list for PBXNativeTarget "pratikcoinlistdemo" */;
@@ -243,6 +311,10 @@
 				LastSwiftUpdateCheck = 1530;
 				LastUpgradeCheck = 1530;
 				TargetAttributes = {
+					E667252C2D12BC3D00AFD8B6 = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = E6CD5AD42D11C43A00F5FDB0;
+					};
 					E6CD5AD42D11C43A00F5FDB0 = {
 						CreatedOnToolsVersion = 15.3;
 					};
@@ -262,11 +334,19 @@
 			projectRoot = "";
 			targets = (
 				E6CD5AD42D11C43A00F5FDB0 /* pratikcoinlistdemo */,
+				E667252C2D12BC3D00AFD8B6 /* pratikcoinlistdemoTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		E667252B2D12BC3D00AFD8B6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E6CD5AD32D11C43A00F5FDB0 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -279,6 +359,18 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		E66725292D12BC3D00AFD8B6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E66725302D12BC3D00AFD8B6 /* pratikcoinlistdemoTests.swift in Sources */,
+				E667253C2D12BD9600AFD8B6 /* CoinListViewTests.swift in Sources */,
+				E667253A2D12BD6400AFD8B6 /* CoinListWireframeTests.swift in Sources */,
+				E66725382D12BC7A00AFD8B6 /* CoinListPresenterTests.swift in Sources */,
+				E667253E2D12BE1000AFD8B6 /* CoinListInteractorTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E6CD5AD12D11C43A00F5FDB0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -314,6 +406,14 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		E66725322D12BC3D00AFD8B6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E6CD5AD42D11C43A00F5FDB0 /* pratikcoinlistdemo */;
+			targetProxy = E66725312D12BC3D00AFD8B6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
 		E6CD5AE32D11C43C00F5FDB0 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
@@ -326,6 +426,40 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		E66725342D12BC3D00AFD8B6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pratikcoinlistdemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/pratikcoinlistdemo.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/pratikcoinlistdemo";
+			};
+			name = Debug;
+		};
+		E66725352D12BC3D00AFD8B6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pratikcoinlistdemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/pratikcoinlistdemo.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/pratikcoinlistdemo";
+			};
+			name = Release;
+		};
 		E6CD5AE72D11C43C00F5FDB0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -502,6 +636,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		E66725332D12BC3D00AFD8B6 /* Build configuration list for PBXNativeTarget "pratikcoinlistdemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E66725342D12BC3D00AFD8B6 /* Debug */,
+				E66725352D12BC3D00AFD8B6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		E6CD5AD02D11C43A00F5FDB0 /* Build configuration list for PBXProject "pratikcoinlistdemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
